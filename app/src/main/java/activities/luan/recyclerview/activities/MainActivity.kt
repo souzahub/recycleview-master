@@ -14,12 +14,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        amRvPeliculas.layoutManager = LinearLayoutManager(this)
-        amRvPeliculas.adapter = AdapterFilmes(generarDatosPrueba(), this)
+        idListaFilmes.layoutManager = LinearLayoutManager(this)
+        idListaFilmes.adapter = AdapterFilmes(geradorDetalhes(), this)
 
     }
 
-    private fun generarDatosPrueba() : ArrayList<Filme>{
+    private fun geradorDetalhes() : ArrayList<Filme>{
         val lista = ArrayList<Filme>()
         lista.add(Filme(R.drawable.interestelar, "Interestelar", "Christopher Nolan", "Ficção científica", 4.3, 169, "2014"))
         lista.add(Filme(R.drawable.forma_agua, "A Forma da Água", "Guillermo del Toro", "Romance/Fantasia", 3.65, 123, "2017"))

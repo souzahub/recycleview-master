@@ -14,6 +14,6 @@ class VisualizaImagem : AppCompatActivity() {
 
         val filmes = intent.getSerializableExtra("pel") as Filme
 
-        aviIvPelicula.setImageResource(filmes.idImagen)
+        idBanerFilmes.setImageResource(filmes.idImagen)
     }
 }
